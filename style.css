@@ -733,3 +733,55 @@ p:last-child { margin-bottom: 0; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== FIX HEADER EN MÓVIL ===== */
+@media (max-width: 600px) {
+
+  .masthead {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .masthead-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+  }
+
+  .masthead-fraktur {
+    font-size: 1.5rem !important;
+  }
+
+  .masthead-sub {
+    font-size: 0.55rem;
+    letter-spacing: 0.15em;
+  }
+
+  .edition-info {
+    font-size: 0.6rem;
+  }
+
+  /* MENÚ MÁS COMPACTO */
+  .masthead-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+
+  .masthead-nav a {
+    font-size: 0.55rem;
+    padding: 0.2rem 0.4rem;
+    border-right: none;
+  }
+
+  /* CRÉDITOS (lo que te está ocupando mucho espacio) */
+  .credits {
+    font-size: 0.7rem;
+    line-height: 1.4;
+    padding: 0.5rem;
+  }
+
+  .credits p {
+    margin-bottom: 0.3rem;
+  }
+
+}
