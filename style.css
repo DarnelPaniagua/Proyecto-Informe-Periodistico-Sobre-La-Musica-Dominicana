@@ -735,7 +735,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ===== FIX HEADER EN MÓVIL ===== */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .masthead {
     padding: 0.8rem 0.5rem;
