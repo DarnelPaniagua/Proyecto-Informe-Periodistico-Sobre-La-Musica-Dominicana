@@ -698,3 +698,38 @@ p:last-child { margin-bottom: 0; }
     text-align: center;
   }
 }
+
+/* ===== ARREGLO ENTREVISTA LAYOUT ===== */
+.interview-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.interview-video {
+  width: 100%;
+}
+
+/* VIDEO RESPONSIVE */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .interview-layout {
+    grid-template-columns: 1fr;
+  }
+}
