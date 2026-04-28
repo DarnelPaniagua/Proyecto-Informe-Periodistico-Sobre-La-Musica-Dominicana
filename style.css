@@ -615,3 +615,86 @@ p:last-child { margin-bottom: 0; }
 .credits strong {
   color: var(--ink);
 }
+
+/* ===== FIX VIDEO RESPONSIVE ===== */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ===== MEJORAS MOBILE SIN ROMPER DISEÑO ===== */
+@media (max-width: 768px) {
+
+  /* Header */
+  .masthead-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-align: center;
+  }
+
+  /* Navegación */
+  .masthead-nav {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .masthead-nav a {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  /* Columnas */
+  .three-col,
+  .two-col {
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem;
+  }
+
+  /* Evita problemas con reverse */
+  .two-col.reverse {
+    direction: ltr;
+  }
+
+  /* Texto */
+  p {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  /* Imágenes */
+  .article-figure img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  /* Instrumentos */
+  .instruments-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Entrevista */
+  .interview-layout {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
